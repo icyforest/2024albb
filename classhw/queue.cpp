@@ -1,19 +1,17 @@
 #include<cstdio>
+#include<iostream> 
 
 
 const int MAX = 10000;
 
 
-typedef struct Queue {
+class Queue {
+public:
 	int node[MAX];
 	
 	int head, tail;
 
-	void start() {
-		head = 0;
-		tail = -1;
-		return;
-	}
+	Queue() :head(0),tail(-1){}
 
 	bool isFull() {
 		if (tail == MAX)
@@ -47,10 +45,10 @@ typedef struct Queue {
 		}
 		return;
 	}
-}queue;
+};
 
 
 int main() {
 	
-	return;
+	return 0;
 }
